@@ -25,7 +25,7 @@ img{
 }
 
 input::placeholder {
-  font-size: 10px; 
+  font-size: 5px; 
   color: #000000ed; 
   font-family: "Zen Dots", serif
 }
