@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 35vw;
+  height: 38vw;
   text-align: center;
   padding: 10px 10px;
   background-size: 40%;
@@ -25,22 +25,21 @@
 
 .pokedex__text {
   font-size: 2.5vw;
-  color: #E10600;
+  color: white;
   text-align: right;
   padding-right: 5%;
   margin-top: 1%;
-  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
 }
 
 
 input {
-  padding: 1%;
+  padding: 2% 5%;
   margin: 2% 0;
   text-align: center;
   border: 2px solid #E10600;
   border-radius: 5px;
   font-family: "Zen Dots", serif;
-  font-size: 1.2vw;
+  font-size: 1vw;
   color: #333;
   background-color: #fff;
   outline: none;
@@ -116,15 +115,11 @@ option[value="all"] {
 
 .error-message {
   color: #E10600;
-
-
-
   font-size: 5vw;
   border-radius: 8px;
   font-weight: bold;
   padding: 12px;
   margin-top: 15px;
-  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
   text-align: center;
 }
 

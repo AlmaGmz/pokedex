@@ -1,15 +1,17 @@
 .pokemon-container {
   display: block;
   width: 100%;
-  max-width: 900px;
   margin: auto;
   text-decoration: none;
-  border: 12px solid;
+  border: 10px solid;
   background-image: url(/src/assets/images/pockebola.jpg);
   background-color: rgba(191, 5, 14, 0.987);
-  background-size: 190vw;
+  background-size: 200%;
   background-repeat: no-repeat;
-  background-position-x: botton right;
+  background-position: top right;
+  overflow: visible;
+  padding: 20px;
+  box-sizing: border-box;
 
 
   .pokemon-header {
@@ -48,11 +50,9 @@
 
   .pokemon-types span {
     margin: 5px 10px;
-    color: #a79595;
+    color: white;
     text-align: center;
     font-size: 3rem;
-    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
-    background-color: rgba(255, 255, 255, 0.6);
     padding: 10px 20px;
     border-radius: 15px;
     display: inline-block;
@@ -81,9 +81,8 @@
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    font-size: 2.3vw;
-    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-    color: #a79595;
+    font-size: 4vw;
+    color: white;
     padding: 5px 10px;
     border-radius: 5px;
     margin: 3px;
@@ -119,8 +118,8 @@
 
   .progress-bar {
     font-weight: bold;
-    font-size: 1.5vw;
-    color: #735259;
+    font-size: 2vw;
+    color: white;
     text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     text-align: center;
     white-space: nowrap;

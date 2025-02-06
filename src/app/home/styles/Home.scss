@@ -54,11 +54,11 @@
 }
 
 input {
-  padding: 2%;
+  padding: 4%;
   border: 2px solid #E10600;
   border-radius: 5px;
   font-family: "Zen Dots", serif;
-  font-size: .5vw;
+  font-size: .2vw;
   color: #333;
   background-color: #fff;
   outline: none;
@@ -88,10 +88,9 @@ input:focus {
 }
 
 .error-message-home {
-  color: #E10600;
+  color: white;
   font-size: 2vw;
   font-weight: bold;
-  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
   white-space: normal;
   word-wrap: break-word;
   width: 100%;
