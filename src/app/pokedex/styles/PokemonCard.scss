@@ -1,0 +1,544 @@
+.pokecard {
+  display: block;
+  text-decoration: none;
+  border: 12px solid;
+  margin-bottom: 10px;
+
+  &__header {
+    &-img {
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  &__body {
+    padding: 1.75em;
+    text-align: center;
+
+    &-name {
+      font-size: 3.2em;
+      font-weight: 700;
+      margin: 0;
+      max-width: 100%;
+    }
+
+    &-types {
+      font-size: 2em;
+      font-weight: normal;
+      margin: 0;
+      color: inherit;
+
+
+      &-label {
+        margin: 0;
+        color: #999;
+      }
+    }
+
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    border-top: 1px solid #ccc;
+    padding-top: 1em;
+    margin-top: 1em;
+
+    &-item {
+
+      text-transform: uppercase;
+      padding: 1em;
+
+      span {
+        display: block;
+        font-size: 1.5em;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &.type--normal {
+    border-image: linear-gradient(181.51deg,
+        #735259 -6.44%,
+        #BC6B7C 121.95%,
+        #7C3F4C 186.11%) 1;
+    color: #735259;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #735259
+        }
+      }
+    }
+  }
+
+  &.type--fighting {
+    border-image: linear-gradient(176.83deg,
+        #96402A -8.78%,
+        #F1613C 169.09%,
+        #CB735D 242.33%) 1;
+    color: #96402a;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #96402a
+        }
+      }
+    }
+  }
+
+  &.type--flying {
+    border-image: linear-gradient(177.03deg,
+        #3A75BB -11.97%,
+        #82A4E3 57.49%,
+        #B0C8FF 135.64%) 1;
+    color: #3A75BB;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #3A75BB
+        }
+      }
+    }
+  }
+
+  &.type--poison {
+    border-image: linear-gradient(177.03deg,
+        #5B3184 -11.97%,
+        #A564E3 71.28%,
+        #CE9BFF 135.64%) 1;
+    color: #5B3184;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #5B3184
+        }
+      }
+    }
+  }
+
+  &.type--ground {
+    border-image: linear-gradient(179.75deg,
+        #654008 -19.96%,
+        #895C1A 43.67%,
+        #D69638 138.4%) 1;
+    color: #654008;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #654008
+        }
+      }
+    }
+  }
+
+  &.type--rock {
+    border-image: linear-gradient(177.03deg,
+        #7E7E7E -11.97%,
+        #8D8D94 57.49%,
+        #D3D3D3 135.64%) 1;
+    color: #7E7E7E;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #7E7E7E
+        }
+      }
+    }
+  }
+
+  &.type--bug {
+    border-image: linear-gradient(177.56deg,
+        #62DB60 -58.92%,
+        #3BB039 16.57%,
+        #AAFFA8 209.53%) 1;
+    color: #62DB60;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #62DB60
+        }
+      }
+    }
+  }
+
+  &.type--ghost {
+    border-image: linear-gradient(177.03deg,
+        #323569 -11.97%,
+        #454AA8 57.49%,
+        #787DDA 135.64%) 1;
+    color: #323569;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #323569
+        }
+      }
+    }
+  }
+
+  &.type--steel {
+    border-image: linear-gradient(179.75deg,
+        #5E736C -19.96%,
+        #728881 43.67%,
+        #A8A8A8 138.4%) 1;
+    color: #5E736C;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #5E736C
+        }
+      }
+    }
+  }
+
+  &.type--fire {
+    border-image: linear-gradient(176.37deg,
+        #F96D6F -32.26%,
+        #E35825 22.55%,
+        #E8AE1B 125.72%) 1;
+    color: #F96D6F;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #F96D6F
+        }
+      }
+    }
+  }
+
+  &.type--water {
+    border-image: linear-gradient(179.57deg,
+        #133258 -70.14%,
+        #1479FB 56.16%,
+        #82B2F1 214.85%) 1;
+    color: #133258;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #133258
+        }
+      }
+    }
+  }
+
+  &.type--grass {
+    border-image: linear-gradient(178.92deg,
+        #7EC6C5 0.92%,
+        #ABDAC6 47.96%,
+        #CAE099 99.08%) 1;
+    color: #65a3a2;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #65a3a2;
+        }
+      }
+    }
+  }
+
+  &.type--electric {
+    border-image: linear-gradient(179.75deg,
+        #0C1395 -19.96%,
+        #2B319B 43.67%,
+        #7075D9 138.4%) 1;
+    color: #0C1395;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #0C1395
+        }
+      }
+    }
+  }
+
+  &.type--psychic {
+    border-image: linear-gradient(177.03deg,
+        #E75480 -11.97%,
+        #F78DA7 57.49%,
+        #FFC1CC 135.64%) 1;
+    color: #E75480;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #E75480
+        }
+      }
+    }
+  }
+
+  &.type--ice {
+    border-image: linear-gradient(177.03deg,
+        #6FBEDF -11.97%,
+        #64CBF5 47.77%,
+        #BDEBFE 136.72%) 1;
+    color: #6FBEDF;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #6FBEDF
+        }
+      }
+    }
+  }
+
+  &.type--dragon {
+    border-image: linear-gradient(179.75deg,
+        #478A93 -19.96%,
+        #56A4AE 43.67%,
+        #A2BEC1 138.4%) 1;
+    color: #478A93;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #478A93
+        }
+      }
+    }
+  }
+
+  &.type--dark {
+    border-image: linear-gradient(177.03deg,
+        #030706 -11.97%,
+        #0D1211 57.49%,
+        #5A5E5D 135.64%) 1;
+    color: #030706;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #030706
+        }
+      }
+    }
+  }
+
+  &.type--fairy {
+    border-image: linear-gradient(179.75deg,
+        #971B45 -19.96%,
+        #C23867 43.67%,
+        #CD7D98 138.4%) 1;
+    color: #971B45;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #971B45
+        }
+      }
+    }
+  }
+
+  &.type--stellar {
+    border-image: linear-gradient(177.03deg,
+        #4B0082 -11.97%,
+        #8A2BE2 57.49%,
+        #DDA0DD 135.64%) 1;
+    color: #4B0082;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #4B0082
+        }
+      }
+    }
+  }
+
+  &.type--unknown {
+    border-image: linear-gradient(177.03deg,
+        #696969 -11.97%,
+        #A9A9A9 57.49%,
+        #D3D3D3 135.64%) 1;
+    color: #696969;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #696969
+        }
+      }
+    }
+  }
+
+  &.type--shadow {
+    border-image: linear-gradient(177.03deg,
+        #2F4F4F -11.97%,
+        #556B2F 57.49%,
+        #8FBC8F 135.64%) 1;
+    color: #2F4F4F;
+
+    .pokecard__stats {
+      &-item {
+        span {
+          color: #2F4F4F
+        }
+      }
+    }
+  }
+
+  .type--normal &__header {
+    background: linear-gradient(181.51deg,
+        #735259 -6.44%,
+        #BC6B7C 121.95%,
+        #7C3F4C 186.11%);
+  }
+
+  .type--fighting &__header {
+    background: linear-gradient(176.83deg,
+        #96402A -8.78%,
+        #F1613C 169.09%,
+        #CB735D 242.33%);
+  }
+
+  .type--flying &__header {
+    background: linear-gradient(177.03deg,
+        #3A75BB -11.97%,
+        #82A4E3 57.49%,
+        #B0C8FF 135.64%);
+  }
+
+  .type--poison &__header {
+    background: linear-gradient(177.03deg,
+        #5B3184 -11.97%,
+        #A564E3 71.28%,
+        #CE9BFF 135.64%);
+  }
+
+  .type--ground &__header {
+    background: linear-gradient(179.75deg,
+        #654008 -19.96%,
+        #895C1A 43.67%,
+        #D69638 138.4%);
+  }
+
+  .type--rock &__header {
+    background: linear-gradient(177.03deg,
+        #7E7E7E -11.97%,
+        #8D8D94 57.49%,
+        #D3D3D3 135.64%);
+  }
+
+  .type--bug &__header {
+    background: linear-gradient(177.56deg,
+        #62DB60 -58.92%,
+        #3BB039 16.57%,
+        #AAFFA8 209.53%);
+  }
+
+  .type--ghost &__header {
+    background: linear-gradient(177.03deg,
+        #323569 -11.97%,
+        #454AA8 57.49%,
+        #787DDA 135.64%);
+  }
+
+  .type--steel &__header {
+    background: linear-gradient(179.75deg,
+        #5E736C -19.96%,
+        #728881 43.67%,
+        #A8A8A8 138.4%);
+  }
+
+  .type--fire &__header {
+    background: linear-gradient(176.37deg,
+        #F96D6F -32.26%,
+        #E35825 22.55%,
+        #E8AE1B 125.72%);
+  }
+
+  .type--water &__header {
+    background: linear-gradient(179.57deg,
+        #133258 -70.14%,
+        #1479FB 56.16%,
+        #82B2F1 214.85%);
+  }
+
+  .type--grass &__header {
+    background: linear-gradient(178.92deg,
+        #7EC6C5 0.92%,
+        #ABDAC6 47.96%,
+        #CAE099 99.08%);
+  }
+
+  .type--electric &__header {
+    background: linear-gradient(179.75deg,
+        #0C1395 -19.96%,
+        #2B319B 43.67%,
+        #7075D9 138.4%);
+  }
+
+  .type--psychic &__header {
+    background: linear-gradient(177.03deg,
+        #E75480 -11.97%,
+        #F78DA7 57.49%,
+        #FFC1CC 135.64%);
+  }
+
+  .type--ice &__header {
+    background: linear-gradient(177.03deg,
+        #6FBEDF -11.97%,
+        #64CBF5 47.77%,
+        #BDEBFE 136.72%);
+  }
+
+  .type--dragon &__header {
+    background: linear-gradient(179.75deg,
+        #478A93 -19.96%,
+        #56A4AE 43.67%,
+        #A2BEC1 138.4%);
+  }
+
+  .type--dark &__header {
+    background: linear-gradient(177.03deg,
+        #030706 -11.97%,
+        #0D1211 57.49%,
+        #5A5E5D 135.64%);
+  }
+
+  .type--fairy &__header {
+    background: linear-gradient(179.75deg,
+        #971B45 -19.96%,
+        #C23867 43.67%,
+        #CD7D98 138.4%);
+  }
+
+  .type--stellar &__header {
+    background: linear-gradient(177.03deg,
+        #4B0082 -11.97%,
+        #8A2BE2 57.49%,
+        #DDA0DD 135.64%);
+  }
+
+  .type--unknown &__header {
+    background: linear-gradient(177.03deg,
+        #696969 -11.97%,
+        #A9A9A9 57.49%,
+        #D3D3D3 135.64%);
+  }
+
+  .type--shadow &__header {
+    background: linear-gradient(177.03deg,
+        #2F4F4F -11.97%,
+        #556B2F 57.49%,
+        #8FBC8F 135.64%);
+  }
+}
